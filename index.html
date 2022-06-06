@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,11 +25,13 @@
 
             <textarea class="caja-encriptar" type="text" placeholder="Ingrese el texto aqui"></textarea>
 
-            <span class="aviso"></span>
             <div class="botonera">
+
+                <span class="aviso-mayus-acentos"></span>
                 <button class="boton-encriptar">Encriptar</button>
                 <button class="boton-desencriptar">Desencriptar</button>
             </div>
+
         </section>
 
         <section class="area-desencriptacion">
@@ -40,9 +43,9 @@
                 <p class="p1">Ningún mensaje fue encontrado</p>
                 <p class="p2">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-           
+
             <button class="boton-copiar">Copiar</button>
-            
+
         </section>
 
     </main>
@@ -51,6 +54,7 @@
     <script src="js/desencriptador.js" type="text/javascript"></script>
     <script src="js/copiar.js" type="text/javascript"></script>
     <script src="js/validacion-texto-vacio.js" type="text/javascript"></script>
+    <script src="js/validacion-texto-mayus-acento.js" type="text/javascript"></script>
 
 </body>
 

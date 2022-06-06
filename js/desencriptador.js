@@ -1,15 +1,18 @@
 
 buttonDesencriptar.addEventListener("click", function () {
 
+    if (!textoTieneMayusculasAcentos(cuadroTexto1.value)) {
 
     if (textoEstaVacio(cuadroTexto1.value)) {
 
         console.log("Esta vacio");
 
-
+        cuadroTexto2.value = "";
         divisionImagenTexto.classList.add("img-text2");
         divisionImagenTexto.classList.remove("img-text");
         imagenSinTexto.classList.add("imagen-textonoencontrado-bg")
+
+        
 
 
     } else {
@@ -22,7 +25,7 @@ buttonDesencriptar.addEventListener("click", function () {
         desencriptarBoton();
     }
 
-    
+}
 
 });
 

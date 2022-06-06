@@ -11,17 +11,22 @@ let divisionImagenTexto = document.querySelector(".img-text");
 
 let imagenSinTexto = document.querySelector(".imagen-textonoencontrado");
 
-cuadroTexto1.addEventListener("click", function(){
+cuadroTexto1.addEventListener("click", function () {
 
-    cuadroTexto2.value="";
+    divisionImagenTexto.classList.remove("img-text2");
+    divisionImagenTexto.classList.add("img-text");
+    cuadroTexto2.value = "";
     cuadroTexto1.select();
 
 });
 
 buttonEncriptar.addEventListener("click", function () {
 
-    
+  
 
+    if (!textoTieneMayusculasAcentos(cuadroTexto1.value)) {
+
+        
     if (textoEstaVacio(cuadroTexto1.value)) {
 
         console.log("Esta vacio");
@@ -34,21 +39,30 @@ buttonEncriptar.addEventListener("click", function () {
 
     } else {
 
-        console.log("NO esta vacio");
+        
+            
+            console.log("NO esta vacio");
 
-        divisionImagenTexto.classList.remove("img-text2");
-        divisionImagenTexto.classList.add("img-text");
-       
-        encriptarBoton();
+            divisionImagenTexto.classList.remove("img-text2");
+            divisionImagenTexto.classList.add("img-text");
+    
+            encriptarBoton();
+
+        
+    
+        }
+
+
     }
-
-    
-
-    
    
-    
 
-    
+
+
+
+
+
+
+
 
 });
 
